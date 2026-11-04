@@ -1,27 +1,29 @@
 # Beach Volleyball 2D
 
-Projeto inicial para um jogo de vôlei de praia em 2D, estilo 2v2, com física, stamina, atacantes, defesas, IA e multiplayer local.
+Jogo de vôlei de praia em HTML, CSS e JavaScript. Você controla um jogador do Brasil e enfrenta uma IA em um campeonato até a final.
 
-## Stack planejada
+## Como jogar
 
-- Godot 4
-- GDScript
-- Physics 2D nativa da engine
-- HTTP + JSON para integração com Supabase
+Abra o arquivo `index.html` em um navegador ou rode um servidor local:
 
-## Estrutura inicial
+```bash
+python -m http.server 8000
+```
 
-- `scenes/` - cenas do jogo
-- `scripts/` - lógica principal, controle da partida e integração de rede
-- `config/` - arquivos de configuração e exemplos de ambiente
-- `assets/` - recursos visuais e sonoros
+Depois acesse:
 
-## Como abrir o projeto
+```text
+http://localhost:8000
+```
 
-1. Abra a pasta do projeto na Godot 4.
-2. Garanta que a configuração do projeto foi detectada.
-3. Execute a cena principal.
+## Objetivo
 
-## Observação
+- controlar o Brasil
+- vencer Argentina, Espanha e França
+- chegar até a final e levantar o troféu
 
-Esta estrutura é apenas a base do projeto. A implementação completa do gameplay, IA e sincronização com Supabase será feita em seguida.
+## Estrutura
+
+- `index.html` - tela principal
+- `style.css` - interface visual
+- `game.js` - lógica do jogo

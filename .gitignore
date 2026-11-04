@@ -1,0 +1,8 @@
+.godot/
+.import/
+.export_presets/
+__pycache__/
+.pytest_cache/
+*.translation
+*.tmp
+*.pid

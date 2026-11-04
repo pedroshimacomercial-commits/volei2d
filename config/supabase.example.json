@@ -1,0 +1,13 @@
+{
+  "project_url": "https://your-project.supabase.co",
+  "anon_key": "replace-with-public-anon-key",
+  "enable_sync": false,
+  "offline_mode": true,
+  "default_player_id": "local-player",
+  "sync_queue_storage": "user://supabase_sync_queue.json",
+  "table_names": {
+    "match_results": "match_results",
+    "player_rankings": "player_rankings",
+    "player_stats": "player_stats"
+  }
+}
