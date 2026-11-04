@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beach Volleyball 2D</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="hud">
+        <div class="team team-left">
+          <span id="team-left-label" class="label">Time A</span>
+          <strong id="score-left">0</strong>
+        </div>
+
+        <div class="center-panel">
+          <div id="status">Modo local vs IA</div>
+          <button id="restart-btn" type="button">Reiniciar</button>
+        </div>
+
+        <div class="team team-right">
+          <span id="team-right-label" class="label">Time B</span>
+          <strong id="score-right">0</strong>
+        </div>
+      </header>
+
+      <div class="play-area">
+        <canvas id="game" width="960" height="540" aria-label="Jogo de vôlei de praia"></canvas>
+
+        <div id="menu" class="menu visible">
+          <div class="menu-card">
+            <div class="menu-badge">Campeonato</div>
+            <h1>Beach Volleyball 2D</h1>
+            <div id="tournament-brief" class="tournament-brief">
+              <span class="pill">Quartas</span>
+              <span class="matchup">BRASIL x ARGENTINA</span>
+            </div>
+            <p id="menu-text">BRASIL precisa vencer vários times até chegar na final e conquistar o título.</p>
+            <button id="start-btn" type="button">Iniciar campeonato</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div>
+          <h3>Time A</h3>
+          <p>W / A / D = mover e saltar</p>
+          <p>S = ataque</p>
+          <p>F = defesa</p>
+          <p>P = pausar</p>
+        </div>
+        <div>
+          <h3>Time B</h3>
+          <p>IA controlando o restante da equipe</p>
+          <p>Modo local apenas</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
